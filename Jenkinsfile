@@ -30,18 +30,17 @@ pipeline {
 		 apt-get update
 		 apt-get install -y git
 		 apt-get install pandoc -y
-		 git config --global  user.name "venkatsai8"
-		 git config --global  user.email "78792754+venkatsai8@users.noreply.github.com"
-		 git remote set-url origin https://${username}:${password}@github.com/venkatsai8/total_new.git
-		 git checkout -b r
-		 git branch
+		 git init
+		 git config user.name "venkatsai8"
+		 git config user.email "natrajsai7@gmail.com"
+		 git checkout -b cc
+		 git remote set-url  origin https://${username}:${password}@github.com/venkatsai8/total_new.git
 		 echo "Hello-world" >> a.txt
-		 git add a.txt
-                 git diff-index --quiet HEAD || git commit -m "Updated with a.txt"
-	         git push origin rc
+		 git add .
+		 git diff-index --quiet HEAD || git commit -m "Added a.txt"
+	         git push origin cc	 
 		'''
-		}
-		
+	     }		
 	   }
 
 	}
