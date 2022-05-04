@@ -13,8 +13,8 @@ pipeline {
 		sh '''
                 echo "Hello Im Developer"
                 apt-get update
-                apt-get -y python3
-               apt-get -y pip
+                apt-get install -y python3
+               apt-get install  -y pip
                '''
 
             }
