@@ -30,8 +30,8 @@ pipeline {
 		 apt-get update
 		 apt-get install -y git
 		 apt-get install pandoc -y
-		 git config --global  user.name "venkatsai8"
-		 git config --global user.email "78792754+venkatsai8@users.noreply.github.com"
+		 git config  user.name "venkatsai8"
+		 git config  user.email "78792754+venkatsai8@users.noreply.github.com"
 		 git checkout -b rc
 		 git remote set-url origin https://venkatsai8:${password}@https://github.com/venkatsai8/mor-tr.git
 		 git pull origin rc
