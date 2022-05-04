@@ -32,8 +32,8 @@ pipeline {
 		 apt-get install pandoc -y
 		 git config --global  user.name "venkatsai8"
 		 git config --global  user.email "78792754+venkatsai8@users.noreply.github.com"
-		 git remote set-url origin https://venkatsai8:${password}@https://github.com/venkatsai8/total_new.git
-		 git checkout -b rc
+		 git remote set-url origin https://${username}:${password}@https://github.com/venkatsai8/total_new.git
+		 git checkout -b r
 		 git branch
 		 echo "Hello-world" >> a.txt
 		 git add a.txt
@@ -43,6 +43,9 @@ pipeline {
 		}
 		
 	   }
+
 	}
+
+
      }
  }
