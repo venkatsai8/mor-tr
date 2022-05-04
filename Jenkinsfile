@@ -32,9 +32,9 @@ pipeline {
 		 apt-get install pandoc -y
 		 git config --global  user.name "venkatsai8"
 		 git config --global  user.email "78792754+venkatsai8@users.noreply.github.com"
-		 git checkout -b rc
 		 git remote set-url origin https://venkatsai8:${password}@https://github.com/venkatsai8/total_new.git
-		 git pull origin rc
+		 git checkout -b rc
+		 git branch
 		 echo "Hello-world" >> a.txt
 		 git add a.txt
                  git diff-index --quiet HEAD || git commit -m "Updated with a.txt"
