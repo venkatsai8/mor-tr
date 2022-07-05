@@ -14,6 +14,7 @@ pipeline {
                 echo "Hello Im Developer"
                 apt-get update
                 apt-get install -y python3
+		where python3
                apt-get install  -y pip
                '''
 
